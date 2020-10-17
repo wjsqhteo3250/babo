@@ -1,9 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>상대</title>
-  </head>
-  <body></body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    body {
+      height: 10000px;
+    }
+
+    .off {
+      position: static;
+      border: 10px solid blue;
+      padding: 10px;
+      margin: 10px;
+      top: 100px;
+      left: 100px;
+    }
+  </style>
+</head>
+
+<body id='start'>
+  <li id="odd">kaka</li>
+  <li>kaka</li>
+  <li>kaka</li>
+  <input type="button" value="open" onclick="winOpen();" />
+  <input type="text" onkeypress="winMsg(this.value);" />
+  <a href="#">1</a>
+  <a href="#">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <div class='off'>
+    <div id='box1'>box1</div>
+    <div id='box2'>box2</div>
+    <div id="box3">box3</div>
+  </div>
+  <table>
+    <tr>
+      <td class="td">1</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+  </table>
+  <button id="btn">hello</button>
+  <input type="button" value="close" onclick="winClose();" />
+  <div class="inner" id="new"></div>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>
